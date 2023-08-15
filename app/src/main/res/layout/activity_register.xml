@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo3"
+        tools:ignore="ImageContrastCheck" />
+
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="  Name"
+            android:layout_below="@id/logo2"
+            android:inputType="text"
+            app:boxStrokeColor="@color/light_green"
+            android:textColorHint="@color/light_green"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/edt_settings"
+            android:drawableStart="@drawable/name"
+            />
+
+
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/edt_settings"
+            android:hint="  Email"
+            android:inputType="textEmailAddress"
+            app:boxStrokeColor="@color/light_green"
+            android:textColorHint="@color/light_green"
+            android:layout_below="@id/edtname"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/email"
+            />
+
+
+
+        <EditText
+            android:id="@+id/edtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/edt_settings"
+            android:hint="  Password"
+            android:inputType="textPassword"
+            app:boxStrokeColor="@color/light_green"
+            android:textColorHint="@color/light_green"
+            android:layout_below="@id/edtemail"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/password"/>
+
+
+
+        <EditText
+            android:id="@+id/edtconf_pass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/edt_settings"
+            android:hint="  Confirm password"
+            android:inputType="textPassword"
+            app:boxStrokeColor="@color/light_green"
+            android:textColorHint="@color/light_green"
+            android:layout_below="@id/edtpassword"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/password"
+            />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtconf_pass"
+        android:text="register"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/light_green"
+
+        />
+
+    <TextView
+        android:id="@+id/TVCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@color/red"
+        android:layout_below="@+id/btnRegister"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

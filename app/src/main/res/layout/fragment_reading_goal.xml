@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".fragments.ReadingGoalFragment">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <ImageView
+        android:layout_width="238dp"
+        android:layout_height="73dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo4" />
+
+    <TextView
+        android:id="@+id/RGNoGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Click here to set your goal!"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/brown"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/IVNoGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/web"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/RGFragment_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="User's 2023 reading goal"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/brown"
+
+        />
+
+    <TextView
+        android:id="@+id/RGFragment_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="0dp"
+        android:text="Your goal is to read 5 books"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+        <Button
+            android:id="@+id/editGoalBtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="Edit Goal"
+            android:textSize="16sp"
+            android:background="@drawable/dialog_button"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/pbGoal"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:max="15"
+            android:progress="4"
+            android:progressTint="@color/light_green"
+            android:backgroundTint="@color/brown"/>
+
+        <TextView
+            android:id="@+id/tvPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="27%"
+            android:textSize="14sp" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/RGFragment_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="You have 11 books left to complete your yearly goal"
+        android:textAlignment="center"/>
+
+</LinearLayout>
+</FrameLayout>

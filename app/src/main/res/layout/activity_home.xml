@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Home"
+    android:id="@+id/relative">
+
+    <FrameLayout
+        android:id="@+id/flWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bnBottomNav"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp" >
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_User"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="15dp"
+                android:clickable="true"
+                app:backgroundTint="@color/background"
+                app:maxImageSize="100dp"
+                app:srcCompat="@drawable/user"
+                android:layout_gravity="end|bottom"
+                tools:ignore="ContentDescription"
+                android:visibility="gone"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_Bookshelves"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="40dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/bookshelves"
+                app:maxImageSize="100dp"
+                app:backgroundTint="@color/background"
+                android:contentDescription="TODO"
+
+                android:layout_gravity="end|bottom"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnBottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/background"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="150dp"
+        />
+
+
+</RelativeLayout>

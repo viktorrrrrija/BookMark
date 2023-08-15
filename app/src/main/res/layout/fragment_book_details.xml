@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BookDetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".BookDetail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/IVBookDetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/light_green"
+                android:padding="5dp"
+                android:src="@drawable/logo1"
+                />
+            <TextView
+                android:id="@+id/TVBookDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Title"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/TVBookDetailSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subtitle"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:textSize="15sp"
+                android:textColor="#6F767B"/>
+
+            <TextView
+                android:id="@+id/TVBookDetailAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:textSize="20sp"
+                android:textColor="#6F767B"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+
+                <Button
+                    android:id="@+id/btnWantToRead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to"
+                    />
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="+" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TVRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate this book:"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="#6F767B"
+                />
+            <RatingBar
+                android:id="@+id/RBBookDetail"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                android:numStars="5"
+                android:layout_marginTop="2dp"
+                android:progressTint="@color/light_green"
+                android:rating="2.5"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/TVSetRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set rating"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/light_green"
+                />
+
+            <TextView
+                android:id="@+id/readDateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="#6F767B"
+
+                />
+
+            <TextView
+                android:id="@+id/showCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Read Date"
+                android:textColor="@color/light_green"
+                />
+            <CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+
+                />
+
+            <Button
+                android:id="@+id/calendarBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_gravity="center"
+
+                />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="#c0c0c0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="DESCRIPTION"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/TVBookDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="This is a book description that would be collected from book object"
+                />
+            <TextView
+                android:id="@+id/idTVNoOfPages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:text="Number of Pages"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/idTVPublishDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:text="Publish Date"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/idTVPublisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:text="Publisher"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:background="#c0c0c0"/>
+
+           <!-- <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="REVIEWS"
+                    android:textAlignment="center"
+                    android:textSize="17dp" />
+
+                <ImageView
+                    android:id="@+id/IVAddReviewBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="358dp"
+                    android:layout_marginBottom="175dp"
+                    android:src="@drawable/add_review" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVReviews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IVAddReviewBtn"
+                />-->
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
